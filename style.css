@@ -1,0 +1,68 @@
+@import "tailwindcss";
+.btn{
+  @apply py-[10px] px-[16px] bg-[#F44335] rounded-[8px] text-white font-semibold hover:bg-blue-500 hover:transition-all hover:duration-300 md:py-[15px] md:px-[30px] md:text-2xl
+}
+.hero-number{
+  @apply text-[#00FF84] text-xl flex flex-col items-center md:text-4xl 
+}
+.skil-list{
+  @apply flex items-center space-x-4 mb-15
+}
+.skil-span{
+  @apply py-[10px] px-[12px] border-1 border-[#F44335] rounded-[100px] 
+ hover:bg-[#F44335] hover:text-white hover:transition-all hover:delay-200 cursor-pointer hover:animate-bounce }
+@keyframes fade-slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.95);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animation-box-right {
+  animation: fade-slide-right 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.8s both;
+}
+@keyframes fade-slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animation-box-left {
+  animation: fade-slide-left 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.8s both;
+}
+
+/* common css */
+button{
+  cursor: pointer;
+}
+/* end common css */
+
+.box-shawooo{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.footer-ul{
+  @apply flex flex-col space-y-3 text-xl md:text-2xl text-2xl text-[#20484F]
+}
+footer div ul li{
+  @apply md:hover:text-3xl
+  hover:text-blue-600 hover:transition-all hover:duration-300 pb-2 hover:border-gray-400 hover:border-b-2 hover:text-2xl md:hover:text-3xl
+}
